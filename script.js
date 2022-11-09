@@ -28,5 +28,6 @@ for( x=day; x>-1; x--){
     cells += "<div>" + " "+"</div>";
 }
 
+
 document.getElementsByClassName("days")[0].innerHTML = cells
 }
