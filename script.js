@@ -1,3 +1,12 @@
+var inputedDate;
+function findDate(){
+var selectedMonth = document.getElementById('month').value;
+var selectedyear = document.getElementById('year').value;
+var selecteddate = document.getElementById('date').value;
+
+ inputedDate = new Date(selectedyear+"-"+selectedMonth+"-"+selecteddate)
+console.log(inputedDate)
+}
 
 var dt = new Date();
 dt.setDate(1);
@@ -18,7 +27,7 @@ for( x=day; x>0; x--){
 }
 
 for(i=1; i<=endDate; i++){
-    if(i==today){
+    if(i==inputedDate){
         cells +="<div class='today'>" + i +"</div>";
     }else{
         cells += "<div>" + i +"</div>";
