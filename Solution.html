@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel ="stylesheet" href="style.css"/>
+    <title>Document</title>
+    
+</head>
+<script type="text/javascript">
+    window.onload = function () {
+        var Years = document.getElementById("year");
+        var currentYear = (new Date()).getFullYear();
+ 
+        for (var i = 1950; i <= currentYear; i++) {
+            var option = document.createElement("option");
+            option.innerHTML = i;
+            option.value = i;
+            Years.appendChild(option);
+        }
+    };
+    
+</script>
+
+<body onload="render()" >
+    <div class="wrapper">
+        <div class="top-input">
+            <select id="month" name="month" class="input-box">
+                <option value="Jauaray">Select Date</ option>
+                <option value="1">January</ option>
+                <option value="2">February</option>
+                <option value="3">March</option>
+                <option value="4">April</option>
+                <option value="5">May</option>
+                <option value="6">June</option>
+                <option value="7">July</option>
+                <option value="8">August</option>
+                <option value="9">September</option>
+                <option value="10">Octomber</option>
+                <option value="11">November</option>
+                <option value="12">December</option>
+            </select>
+            <select id="year" name="year" class="input-box"></select>
+        </div>
+        <div class="calender">
+            <div class="weekdays">
+                <div>SUN</div>
+                <div>MON</div>
+                <div>TUE</div>
+                <div>WED</div>
+                <div>THU</div>
+                <div>FRI</div>
+                <div>SAT</div>
+            </div>
+            <div class="days"> </div>
+        </div>
+        <div class="bottom-input">
+            <input type="text" placeholder="Enter any Date" class="input-box">
+            <button>ENTER</button>
+        </div>
+    </div>
+   
+   <script></script>
+</body>
+</html>
