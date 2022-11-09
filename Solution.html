@@ -8,20 +8,7 @@
     <title>Document</title>
     
 </head>
-<script type="text/javascript">
-    window.onload = function () {
-        var Years = document.getElementById("year");
-        var currentYear = (new Date()).getFullYear();
- 
-        for (var i = 1950; i <= currentYear; i++) {
-            var option = document.createElement("option");
-            option.innerHTML = i;
-            option.value = i;
-            Years.appendChild(option);
-        }
-    };
-    
-</script>
+
 
 <body onload="render()" >
     <div class="wrapper">
@@ -61,6 +48,20 @@
         </div>
     </div>
    
-   <script></script>
+   <script src="script.js"></script>
+   <script type="text/javascript">
+    window.onload = function () {
+        var Years = document.getElementById("year");
+        var currentYear = (new Date()).getFullYear();
+ 
+        for (var i = 1950; i <= currentYear; i++) {
+            var option = document.createElement("option");
+            option.innerHTML = i;
+            option.value = i;
+            Years.appendChild(option);
+        }
+    };
+    
+</script>
 </body>
 </html>

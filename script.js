@@ -1,4 +1,4 @@
-function renderdate(){
+
 var dt = new Date();
 dt.setDate(1);
 
@@ -30,4 +30,5 @@ for( x=day; x>-1; x--){
 
 
 document.getElementsByClassName("days")[0].innerHTML = cells
-}
+
+
